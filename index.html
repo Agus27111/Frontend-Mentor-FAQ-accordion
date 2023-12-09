@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <!-- TailwindCSS -->
+    <link href="/dist/output.css" rel="stylesheet" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | FAQ accordion</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      html {
+        font-size: 16px;
+        font-family: "Work Sans", sans-serif;
+      }
+      section {
+        background-image: url(./assets/images/background-pattern-mobile.svg);
+        background-repeat: no-repeat;
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="min-h-screen flex justify-center items-center">
+      <div
+        class="card flex flex-col justify-center items-center w-3/4 mx-auto bg-white p-4 rounded-xl shadow-md shadow-black"
+      >
+        <div class="header flex text-left my-6 relative right-14">
+          <img src="./assets/images/icon-star.svg" alt="star" class="w-6" />
+          <h1 class="font-bold text-3xl ml-4">FAQs</h1>
+        </div>
+        <div class="content">
+          <!-- First Item -->
+          <div class="item mb-6">
+            <div class="title flex justify-between items-center">
+              <h3 class="font-semibold leading-4 text-sm mr-8">
+                What is Frontend Mentor, and how will it help me?
+              </h3>
+              <img
+                src="./assets/images/icon-plus.svg"
+                alt="plus"
+                class="button plus cursor-pointer"
+              />
+              <img
+                src="./assets/images/icon-minus.svg"
+                alt="minus"
+                class="button minus cursor-pointer hidden"
+              />
+            </div>
+            <div class="pHide">
+              <p
+                class="leading-5 text-grayish-purple mt-4 text-xs justify-stretch"
+              >
+                Frontend Mentor offers realistic coding challenges to help
+                developers improve their frontend coding skills with projects in
+                HTML, CSS, and JavaScript. It's suitable for all levels and
+                ideal for portfolio building.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Second Item -->
+        <div class="item mb-6">
+          <div class="title title flex justify-between items-center">
+            <h3 class="font-semibold leading-4 text-sm mr-8">
+              Is Frontend Mentor free?
+            </h3>
+            <img
+              src="./assets/images/icon-plus.svg"
+              alt="plus"
+              class="button plus"
+            />
+            <img
+              src="./assets/images/icon-minus.svg"
+              alt="minus"
+              class="button minus hidden"
+            />
+          </div>
+          <div class="pHide hidden">
+            <p class="leading-5 text-grayish-purple">
+              Yes, Frontend Mentor offers both free and premium coding
+              challenges, with the free option providing access to a range of
+              projects suitable for all skill levels.
+            </p>
+          </div>
+        </div>
+        <!-- Third Item -->
+        <div class="item mb-6">
+          <div class="title title flex justify-between items-center">
+            <h3 class="font-semibold leading-4 text-sm mr-4">
+              Can I use Frontend Mentor projects in my portfolio?
+            </h3>
+            <img
+              src="./assets/images/icon-plus.svg"
+              alt="plus"
+              class="button plus"
+            />
+            <img
+              src="./assets/images/icon-minus.svg"
+              alt="minus"
+              class="button minus hidden"
+            />
+          </div>
+          <div class="pHide hidden">
+            <p class="leading-5 text-grayish-purple">
+              Yes, you can use projects completed on Frontend Mentor in your
+              portfolio. It's an excellent way to showcase your skills to
+              potential employers!
+            </p>
+          </div>
+        </div>
+        <!-- Fourth Item -->
+        <div class="item mb-6">
+          <div class="title title flex justify-between items-center">
+            <h3 class="font-semibold leading-4 text-sm mr-5">
+              How can I get help if I'm stuck on a challenge?
+            </h3>
+            <img
+              src="./assets/images/icon-plus.svg"
+              alt="plus"
+              class="button plus"
+            />
+            <img
+              src="./assets/images/icon-minus.svg"
+              alt="minus"
+              class="button minus hidden"
+            />
+          </div>
+          <div class="pHide hidden">
+            <p class="leading-5 text-grayish-purple">
+              The best place to get help is inside Frontend Mentor's Discord
+              community. There's a help channel where you can ask questions and
+              seek support from other community members.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
