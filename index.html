@@ -29,10 +29,7 @@
         font-size: 16px;
         font-family: "Work Sans", sans-serif;
       }
-      section {
-        background-image: url(./assets/images/background-pattern-mobile.svg);
-        background-repeat: no-repeat;
-      }
+
       .attribution {
         font-size: 11px;
         text-align: center;
@@ -43,7 +40,14 @@
     </style>
   </head>
   <body>
-    <section class="min-h-screen flex justify-center items-center">
+    <section class="min-h-screen flex flex-col justify-center items-center">
+      <div class="w-full">
+        <img
+          src="./assets/images/background-pattern-mobile.svg"
+          alt=""
+          class="absolute -z-10 w-full top-0"
+        />
+      </div>
       <div
         class="card flex flex-col justify-center items-center w-3/4 mx-auto bg-white p-4 rounded-xl shadow-md shadow-black"
       >
@@ -84,7 +88,7 @@
         <!-- Second Item -->
         <div class="item mb-6">
           <div class="title flex justify-between items-center">
-            <h3 class="font-semibold leading-4 text-sm mr-8">
+            <h3 class="font-semibold leading-4 text-sm mr-11">
               Is Frontend Mentor free?
             </h3>
             <img
@@ -99,7 +103,9 @@
             />
           </div>
           <div class="pHide hidden">
-            <p class="leading-5 text-grayish-purple">
+            <p
+              class="leading-5 text-grayish-purple mt-4 text-xs justify-stretch"
+            >
               Yes, Frontend Mentor offers both free and premium coding
               challenges, with the free option providing access to a range of
               projects suitable for all skill levels.
@@ -124,7 +130,9 @@
             />
           </div>
           <div class="pHide hidden">
-            <p class="leading-5 text-grayish-purple">
+            <p
+              class="leading-5 text-grayish-purple mt-4 text-xs justify-stretch"
+            >
               Yes, you can use projects completed on Frontend Mentor in your
               portfolio. It's an excellent way to showcase your skills to
               potential employers!
@@ -149,7 +157,9 @@
             />
           </div>
           <div class="pHide hidden">
-            <p class="leading-5 text-grayish-purple">
+            <p
+              class="leading-5 text-grayish-purple mt-4 text-xs justify-stretch"
+            >
               The best place to get help is inside Frontend Mentor's Discord
               community. There's a help channel where you can ask questions and
               seek support from other community members.
