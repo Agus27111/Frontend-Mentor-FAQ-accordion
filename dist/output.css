@@ -544,14 +544,6 @@ video {
   position: absolute;
 }
 
-.relative {
-  position: relative;
-}
-
-.right-14 {
-  right: 3.5rem;
-}
-
 .top-0 {
   top: 0px;
 }
@@ -574,8 +566,16 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.ml-0 {
+  margin-left: 0px;
+}
+
 .ml-4 {
   margin-left: 1rem;
+}
+
+.mr-11 {
+  margin-right: 2.75rem;
 }
 
 .mr-4 {
@@ -594,20 +594,44 @@ video {
   margin-top: 1rem;
 }
 
-.mr-10 {
-  margin-right: 2.5rem;
-}
-
-.mr-11 {
-  margin-right: 2.75rem;
-}
-
 .flex {
   display: flex;
 }
 
 .hidden {
   display: none;
+}
+
+.h-40 {
+  height: 10rem;
+}
+
+.h-20 {
+  height: 5rem;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-\[10\%\] {
+  height: 10%;
+}
+
+.h-\[20\%\] {
+  height: 20%;
+}
+
+.h-\[15\%\] {
+  height: 15%;
+}
+
+.h-\[100px\] {
+  height: 100px;
+}
+
+.h-\[200px\] {
+  height: 200px;
 }
 
 .min-h-screen {
@@ -624,6 +648,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-auto {
+  width: auto;
 }
 
 .cursor-pointer {
@@ -665,10 +693,6 @@ video {
 
 .text-left {
   text-align: left;
-}
-
-.text-right {
-  text-align: right;
 }
 
 .text-3xl {
@@ -716,4 +740,28 @@ video {
 .shadow-black {
   --tw-shadow-color: #000;
   --tw-shadow: var(--tw-shadow-colored);
+}
+
+@media (min-width: 640px) {
+  .sm\:hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:hidden {
+    display: none;
+  }
+
+  .lg\:w-1\/2 {
+    width: 50%;
+  }
+
+  .lg\:w-1\/4 {
+    width: 25%;
+  }
+
+  .lg\:w-\[30\%\] {
+    width: 30%;
+  }
 }

@@ -41,25 +41,31 @@
   </head>
   <body>
     <section class="min-h-screen flex flex-col justify-center items-center">
-      <div class="w-full">
+      <div class="w-full h-[20%]" id="bgImg">
         <img
+          class="absolute -z-10 w-full top-0"
           src="./assets/images/background-pattern-mobile.svg"
+        />
+      </div>
+      <div class="w-full" id="bgImg2">
+        <img
+          src="./assets/images/background-pattern-desktop.svg"
           alt=""
           class="absolute -z-10 w-full top-0"
         />
       </div>
       <div
-        class="card flex flex-col justify-center items-center w-3/4 mx-auto bg-white p-4 rounded-xl shadow-md shadow-black"
+        class="card flex flex-col w-3/4 mx-auto bg-white p-4 rounded-xl shadow-md shadow-black lg:w-[30%]"
       >
-        <div class="header flex text-left my-6 relative right-14">
+        <div class="header flex text-left my-6">
           <img src="./assets/images/icon-star.svg" alt="star" class="w-6" />
           <h1 class="font-bold text-3xl ml-4">FAQs</h1>
         </div>
-        <div class="content">
+        <div class="content text-left">
           <!-- First Item -->
           <div class="item mb-6">
             <div class="title flex justify-between items-center">
-              <h3 class="font-semibold leading-4 text-sm mr-8">
+              <h3 class="font-semibold leading-4 text-sm mr-8 ml-0">
                 What is Frontend Mentor, and how will it help me?
               </h3>
               <img
@@ -75,7 +81,7 @@
             </div>
             <div class="pHide">
               <p
-                class="leading-5 text-grayish-purple mt-4 text-xs justify-stretch"
+                class="leading-5 text-grayish-purple mt-4 mr-8 text-xs justify-stretch"
               >
                 Frontend Mentor offers realistic coding challenges to help
                 developers improve their frontend coding skills with projects in
@@ -87,8 +93,8 @@
         </div>
         <!-- Second Item -->
         <div class="item mb-6">
-          <div class="title flex justify-between items-center">
-            <h3 class="font-semibold leading-4 text-sm mr-11">
+          <div class="title flex justify-between items-center w-full">
+            <h3 class="font-semibold leading-4 text-sm mr-11 ml-0">
               Is Frontend Mentor free?
             </h3>
             <img
@@ -104,7 +110,7 @@
           </div>
           <div class="pHide hidden">
             <p
-              class="leading-5 text-grayish-purple mt-4 text-xs justify-stretch"
+              class="leading-5 text-grayish-purple mt-4 mr-8 text-xs justify-stretch"
             >
               Yes, Frontend Mentor offers both free and premium coding
               challenges, with the free option providing access to a range of
@@ -131,7 +137,7 @@
           </div>
           <div class="pHide hidden">
             <p
-              class="leading-5 text-grayish-purple mt-4 text-xs justify-stretch"
+              class="leading-5 text-grayish-purple mt-4 mr-8 text-xs justify-stretch"
             >
               Yes, you can use projects completed on Frontend Mentor in your
               portfolio. It's an excellent way to showcase your skills to
