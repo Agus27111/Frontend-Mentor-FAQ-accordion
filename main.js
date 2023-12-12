@@ -22,17 +22,15 @@ buttonHide.forEach((button) => {
 
 // for the backround
 
-// Get the reference to the image element
-let mobile = document.getElementById("bgImg");
-let desktop = document.getElementById("bgImg2");
-
-// Function to check the screen size and apply the background image accordingly
+// Function to check the screen size and set the appropriate image source
 function setBackgroundImage() {
+  const bgImg = document.getElementById("bgImg");
   if (window.matchMedia("(min-width: 1024px)").matches) {
     // For desktop screens (min-width: 1024px)
-    mobile.document.classList.add("hidden");
+    bgImg.src = "./assets/images/background-pattern-desktop.svg";
   } else {
-    desktop.document.classList.add("hidden");
+    // For mobile screens or smaller than 1024px
+    bgImg.src = "./assets/images/background-pattern-mobile.svg";
   }
 }
 

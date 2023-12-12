@@ -29,6 +29,14 @@
         font-size: 16px;
         font-family: "Work Sans", sans-serif;
       }
+      .pHide {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 1s ease-in-out;
+      }
+      .pHide:not(.hidden) {
+        max-height: 500px;
+      }
 
       .attribution {
         font-size: 11px;
@@ -41,7 +49,11 @@
   </head>
   <body>
     <section class="min-h-screen flex flex-col justify-center items-center">
-      <div class="w-full h-[20%]" id="bgImg">
+      <div class="w-full h-[20%]" id="bgImgContainer">
+        <img class="absolute -z-10 w-full top-0" id="bgImg" src="" />
+      </div>
+
+      <!-- <div class="w-full h-[20%]" id="bgImg">
         <img
           class="absolute -z-10 w-full top-0"
           src="./assets/images/background-pattern-mobile.svg"
@@ -53,7 +65,7 @@
           alt=""
           class="absolute -z-10 w-full top-0"
         />
-      </div>
+      </div> -->
       <div
         class="card flex flex-col w-3/4 mx-auto bg-white p-4 rounded-xl shadow-md shadow-black lg:w-[30%]"
       >
